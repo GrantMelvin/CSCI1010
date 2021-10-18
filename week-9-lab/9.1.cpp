@@ -11,8 +11,8 @@ int main()
 {
     char p1, p2 ; // player 1 and player 2 
 
-    cout << "Please select 'r' for rock, 's' for scissors, and 'p' for paper during the game!" ;
-    cout << "                   -------------------------------------                        " ;
+    cout << "Please select 'r' for rock, 's' for scissors, and 'p' for paper during the game!\n" ;
+    cout << "                   -------------------------------------                        \n" ;
 
     // O/I for player 1
     cout << "Player 1, please choose your hand: \n" ;
@@ -22,44 +22,67 @@ int main()
     cout << "Player 2, please choose your hand: \n" ;
     cin >> p2 ;
 
-    if(p1 == 'r' || 'R')
+    // Chooses winner if player 1 is rock
+    if(p1 == 'r' || p1 == 'R')
     {
-        if(p2 == 'r' || 'R')
+        if(p2 == 's' || p2 == 'S')
         {
-            cout << "Draw!" ;
+            cout << "Player 1 wins!\n" ;
         }
-        else if(p2 == 's' || 'S')
+        else if(p2 == 'r' || p2 == 'R')
         {
-            cout << "Player 1 wins!" ;
+            cout << "Draw!\n" ;
         }
-    }
-    if(p1 == 's' || 'S')
-    {
-        if(p2 == 's' || 'S')
+        else if(p2 == 'p' || p2 == 'P')
         {
-            cout << "Draw!" ;
+            cout << "Player 2 wins!\n" ;
         }
-        else if(p2 == 'p' || 'P')
-        {
-            cout << "Player 1 wins!" ;
-        }
-    }
-    if(p1 == 'p' || 'P')
-    {
-        if(p2 == 'p' || 'P')
-        {
-            cout << "Draw!" ;
-        }
-        else if(p2 == 'r' || 'R')
-        {
-            cout << "Player 1 wins!" ;
-        }
-            else
-            {
-                cout << "Player 2 wins!"
-            }
     }
 
-    return 0 ;
+        // Chooses winner if player 1 is scissors
+        if(p1 == 's' || p1 == 'S')
+        {
+            if(p2 == 'p' || p2 == 'P')
+            {
+                cout << "Player 1 wins!\n" ;
+            }
+            else if(p2 == 's' || p2 == 'S')
+            {
+                cout << "Draw!\n" ;
+            }
+            else if(p2 == 'r' || p2 == 'R')
+            {
+                cout << "Player 2 wins!\n" ;
+            }
+        }
+
+            // Chooses winner if player 1 is paper
+            if(p1 == 'p' || p1 == 'P')
+            {
+                if(p2 == 'r' || p2 == 'R')
+                {
+                    cout << "Player 1 wins!\n" ;
+                }
+                else if(p2 == 'p' || p2 == 'P')
+                {
+                    cout << "Draw!\n" ;
+                }
+                else if(p2 == 's' || p2 == 'S')
+                {
+                    cout << "Player 2 wins!\n" ;
+                }
+            }
+
+                // Error message in case invalid options are chosen by user
+                if(p1 != 'r' && p1 != 's'&& p1 != 'p' && p1 != 'R' && p1 != 'S' && p1 != 'P' )
+                {
+                    cout << "Please enter a valid option!(r,p, or s)!\n" ;
+                }
+                else if(p2 != 'r' && p2 != 's'&& p2 != 'p' && p2 != 'R' && p2 != 'S' && p2 != 'P' )
+                {
+                    cout << "Please enter a valid option!(r,p, or s)!\n" ;
+                }
+
+            return 0 ;
 
 }
