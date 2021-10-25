@@ -36,8 +36,7 @@ int main()
         while(1)
         {                     
             // Checks if input is a number
-            cin >> order ;
-            
+            cin >> order ;  
             
                 // Ordering process
             switch(order)
@@ -72,7 +71,7 @@ int main()
                 cout << endl ;
                 cout << endl ;
                 cout << "Your total cost is: " << cost + tax << endl ;
-                cout << endl ;
+                cout << "Thanks for your service!\n" ;
                 cout << endl ;
                 cout << "---------Welcome to the Hungry Hippo----------\n" ;
                 cout << "**********************************************\n" ;
@@ -83,10 +82,9 @@ int main()
                 cout << "3. Pretzel \t" << "$3.99\n" ;
                 cout << "Please enter the corresponding number for the item you'd like to purchase: \n" ;
                 cout << "Press '9' to stop ordering! \n" ; 
-
                 break ;
 
-                default: // Checks if the user-entered number is in range given
+                default: // Checks if the user-entered number is in range given     
                 cout << "Please enter a valid number!\n" ;
                 break ;
 
