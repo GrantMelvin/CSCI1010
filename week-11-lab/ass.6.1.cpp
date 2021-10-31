@@ -9,10 +9,12 @@ using namespace std ;
 
 int main()
 {
-    int user_num, counter = 0;
+    int user_num, counter = 0; // defines variables
 
+    // Output for question
     cout << "Please enter 10 numbers, seperated by an enter-key: \n" ; 
 
+    // Loops through input and counts numbers above 60
     for(int i = 0; i < 10 ; i++)
     {
         cin >> user_num ;
@@ -22,6 +24,7 @@ int main()
         }
     }
 
+    // Outputs number above 60
     cout << "You have " << counter << " numbers above 60\n" ;
 
     return 0 ;
