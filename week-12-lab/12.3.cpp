@@ -1,6 +1,6 @@
 // Grant Melvin
 // CSCI 1010
-// Lab 12.1
+// Lab 12.3
 /*
 Write a program to create an int array of size 10, and let the user enter 10 values for the 
 elements int the array. Find how many numbers greater than the mean value and how 

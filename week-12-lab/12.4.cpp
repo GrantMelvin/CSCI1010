@@ -1,6 +1,6 @@
 // Grant Melvin
 // CSCI 1010
-// Lab 12.1
+// Lab 12.4
 /*
 Harmonic numbers are calculated by 1 + ½  + 1/3 + ¼  ... + 1/n. Write a program to create 
 a 20 length array. Each element stores (i + 1)-th harmonic number. Such as: 

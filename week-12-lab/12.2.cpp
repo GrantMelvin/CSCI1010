@@ -1,6 +1,6 @@
 // Grant Melvin
 // CSCI 1010
-// Lab 12.1
+// Lab 12.2
 /* 
 The Fibonacci numbers are 0, 1, 1, 2, 3, 5, 8, 13, ...., where each number is the sum of 
 the two preceding numbers. Write a program that declares an array of size 40 and fill 
