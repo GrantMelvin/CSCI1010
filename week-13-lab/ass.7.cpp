@@ -71,9 +71,9 @@ int main()
     cout << endl << "The new descending-order list is: " << endl;
 
     // Bubble sort loop
-    for(int i = 0 ; i < counter - 1 ; i++)
+    for(int i = 0 ; i < counter ; i++)
     {   
-        for(int j = 0 ; j < counter - i - 1 ; j++)
+        for(int j = 0 ; j < counter - i - 1; j++)
         {
             if(arr[j] < arr[j+1])
             {
@@ -97,5 +97,6 @@ int main()
 
     cout << endl ;
 
-
+    return 0 ;
+     
 }
