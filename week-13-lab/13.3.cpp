@@ -12,8 +12,6 @@ using namespace std ;
 
 int singlenum(int arr[], int counter)
 {
-    int sum = 0 ;
-
     for(int i = 0 ; i < counter ; i++ )
     {
         for(int j = 0 ; j < counter - i - 1 ; j++ )
@@ -25,7 +23,6 @@ int singlenum(int arr[], int counter)
                 arr[j + 1] = temp ;
             }
         }
-        sum += arr[i] ;
     }
 
     for(int i = 0 ; i < counter ; i += 2 )
